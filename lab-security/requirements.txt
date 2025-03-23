@@ -1,0 +1,3 @@
+dotenv
+azure-ai-inference
+opentelemetry-sdk

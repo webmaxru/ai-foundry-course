@@ -1,0 +1,15 @@
+{
+  "package": {},
+  "code": {
+    "intent_mapping.prompty": {
+      "type": "llm",
+      "inputs": {
+        "conversation": {
+          "type": [
+            "array"
+          ]
+        }
+      }
+    }
+  }
+}
