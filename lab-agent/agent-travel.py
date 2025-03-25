@@ -10,10 +10,16 @@ model_name = os.environ["MODEL_DEPLOYMENT_NAME"]
 
 try:
     project = AIProjectClient.from_connection_string(
-        credential=DefaultAzureCredential(),
+        credential=DefaultAzureCredential(
+            exclude_environment_credential=True,
+            exclude_workload_identity_credential=True,
+            exclude_shared_token_cache_credential=True,
+            exclude_azure_powershell_credential=True,
+            exclude_azure_developer_cli_credential=True,
+        ),
         conn_str=os.environ["AIPROJECT_CONNECTION_STRING"],
     )
-    print("✅ Successfully initialized AIProjectClient")
+    print("✅ Successfully initialized AIProjectClient1")
 except Exception as e:
     print(f"❌ Error initializing project client: {e}")
 

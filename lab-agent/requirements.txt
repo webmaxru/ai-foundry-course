@@ -1,3 +1,5 @@
 dotenv
 azure-ai-projects
 azure-identity
+azure-ai-inference
+azure-monitor-opentelemetry
