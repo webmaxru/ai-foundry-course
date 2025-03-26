@@ -22,7 +22,7 @@ data = {"chat_input":"where to stay in new york?","chat_history":[]}
 
 body = str.encode(json.dumps(data))
 
-url = os.environ["ENDPOINT"]'
+url = os.environ["ENDPOINT"]
 # Replace this with the primary/secondary key, AMLToken, or Microsoft Entra ID token for the endpoint
 api_key = os.environ["ENDPOINT_KEY"]
 if not api_key:

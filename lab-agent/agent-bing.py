@@ -5,7 +5,7 @@ from azure.identity import DefaultAzureCredential
 
 from utils import enable_telemetry
 from opentelemetry import trace
-enable_telemetry()
+# enable_telemetry()
 
 project = AIProjectClient.from_connection_string(
     credential=DefaultAzureCredential(),
